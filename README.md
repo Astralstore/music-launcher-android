@@ -12,15 +12,30 @@ The agenda was to re-purpose an old android phone into a MP3/MP4 player. Went th
 
 Then this idea dawned on me. I created a custom launcher to open my music app on startup and that's exactly what I wanted. I use YouTube Music and that serves in-app video as well. Disabled the lock screen and there you go, the phone always is in the music mode. You can do the same for any app if your requirements are same as mine. make it completely offline if you want. The phone's WiFi allows me to download the songs into phone's storage and keep them for offline use.
 
-Now I have a WiFi enabled MP3/MP4 player with headphone jack.
-
-## Steps to Run
+## Steps to Build
 
 - Download the project.
-- Build the code (Gradle 4.6 & Java 8 SDK) 
+- Download Java 8 SDK [here](https://adoptium.net/temurin/releases/?version=8)
+- Install the SDK and open the project folder and open the gradlew file using Terminal (Linux)
+```sh
+./gradlew
+```
+or double click on ```gradlew.bat``` if you're using windows.
+- if all software and dependencies are install, open terminal and type
+For Linux
+```sh
+./gradlew build
+```
+For Windows open Command Prompt
+```sh
+gradlew build
+```
 - Check if there any bugs. Mostly it will be related to sdk downloads.
+- The output file will be on ```app/build/outputs/apk```
+- Install it on your phone and set the default launcher to 'Music Launcher' and there you go. All set.
+
+## Notes
 - This project targets for Android 4 (Kitkat) until Android 11
 - Go to app/src/main/res/values/strings.xml.
 - Change property target_app's value to your music app's package name. You can get the the package name from Google Play Store. It will be in URL.
-- Build and Run.
-- In your device set the default launcher to 'Music Launcher' and there you go. All set.
+
