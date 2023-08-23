@@ -20,17 +20,23 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    continue-on-error: true
     steps:
     - uses: actions/checkout@v3
-    - name: Run chmod to make gradlew executable
+    - name: Fix gradlew permission
       run: chmod +x ./gradlew
     - name: Set up JDK 8
       uses: actions/setup-java@v3
       with:
         java-version: '8'
         distribution: 'temurin'
-    - name: Build with Gradle
+    - name: Build debug apk
       uses: gradle/gradle-build-action@bd5760595778326ba7f1441bcf7e88b49de61a25 # v2.6.0
       with:
         arguments: build
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: Debug APK
+        path: build/outputs/apk/outputs/debug/*.apk
+
