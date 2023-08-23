@@ -36,6 +36,7 @@ gradlew build
 
 ## Notes
 - This project targets for Android 4 (Kitkat) until Android 11
+- You **MUST** install the supported Music app (Check Releases first if you download it from releases. if you build from source code, the default music app supported is YouTube Music) otherwise it will not working.
 - Go to app/src/main/res/values/strings.xml.
 - Change property target_app's value to your music app's package name. You can get the the package name from Google Play Store. It will be in URL.
 
