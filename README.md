@@ -2,7 +2,7 @@
 
 ![Picture](app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png)
 
-Project for re-purposing your old mobile phone in to a mp3 player via a launcher. No ROOT privileges required.
+Project for re-purposing your old mobile phone in to a mp3 player via a launcher. No root privileges required.
 
 [For Demo, visit here](https://youtu.be/ik7YlZy_g8U)
 
@@ -17,9 +17,9 @@ Now I have a WiFi enabled MP3/MP4 player with headphone jack.
 ## Steps to Run
 
 - Download the project.
-- Build the code.
+- Build the code (Gradle 4.6 & Java 8 SDK) 
 - Check if there any bugs. Mostly it will be related to sdk downloads.
-- This project targets for KitKat and above.
+- This project targets for Android 4 (Kitkat) until Android 11
 - Go to app/src/main/res/values/strings.xml.
 - Change property target_app's value to your music app's package name. You can get the the package name from Google Play Store. It will be in URL.
 - Build and Run.
