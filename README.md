@@ -8,9 +8,9 @@ Project for re-purposing your old mobile phone in to a mp3 player via a launcher
 
 ## Problem Statement
 
-The agenda was to re-purpose an old android phone into a MP3/MP4 player. Went through a lot of articles about turning a phone into a standalone music player but all they talked about was installing the apps, radio blah blah blah. I found some where one needs to root the device and execute a lot of CLI commands, flash the OS etc . Very tedious.
+The objective was to repurpose an old Android phone into an MP3/MP4 player. I went through numerous articles discussing the conversion of a phone into a dedicated music player, but they mainly focused on installing apps, radio functions, and so on. I came across some sources that suggested rooting the device and executing various Command Line Interface (CLI) commands, along with flashing the operating system. This process seemed quite laborious.
 
-Then this idea dawned on me. I created a custom launcher to open my music app on startup and that's exactly what I wanted. I use YouTube Music and that serves in-app video as well. Disabled the lock screen and there you go, the phone always is in the music mode. You can do the same for any app if your requirements are same as mine. make it completely offline if you want. The phone's WiFi allows me to download the songs into phone's storage and keep them for offline use.
+Then, an idea struck me. I developed a custom launcher that would automatically open my music app upon startup, achieving precisely what I desired. I utilize YouTube Music, which also provides in-app video functionality. By disabling the lock screen, I ensured that the phone consistently remained in music mode. This approach can be applied to any app if the requirements align with mine, and it can even be utilized in an entirely offline capacity if desired. Thanks to the phone's WiFi, I can download songs directly to the device's storage for offline usage.
 
 ## Steps to Build
 
